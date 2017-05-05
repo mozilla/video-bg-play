@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Video Background Play Fix",
+  "version": "1.0",
+
+  "description": "Some sites may not work with Firefox video background play feature. This add-on provides a quick fix.",
+
+  "applications": {
+    "gecko": {
+      "id": "video-bg-play@timdream.org",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.vimeo.com/*"],
+      "js": ["video-bg-play-content.js"]
+    }
+  ]
+}
