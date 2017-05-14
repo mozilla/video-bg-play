@@ -4,15 +4,15 @@
 Object.defineProperties(document.wrappedJSObject,
   { 'hidden': {value: false}, 'visibilityState': {value: 'visible'} });
 
-document.addEventListener(
+window.addEventListener(
   'visibilitychange', evt => evt.stopImmediatePropagation(), true);
 
 // Fullscreen API
-document.addEventListener('fullscreenchange', evt => {
+window.addEventListener('fullscreenchange', evt => {
   Object.defineProperties(document.wrappedJSObject,
     { 'fullscreenEnabled': {value: true},
       'fullscreen': {value: true},
       'fullscreenElement': {value: document.fullscreenElement.wrappedJSObject}});
-  document.addEventListener(
+  window.addEventListener(
     'fullscreenchange', evt => evt.stopImmediatePropagation(), true);
 }, { capture: true, once: true });
