@@ -15,7 +15,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*", "*://*.vimeo.com/*"],
-      "js": ["video-bg-play-content.js"]
+      "js": ["video-bg-play-content.js"],
+      "all_frames": true
     }
   ]
 }
