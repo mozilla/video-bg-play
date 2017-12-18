@@ -6,6 +6,8 @@ Object.defineProperties(document.wrappedJSObject,
 
 window.addEventListener(
   'visibilitychange', evt => evt.stopImmediatePropagation(), true);
+window.addEventListener(
+  'blur', evt => evt.stopImmediatePropagation(), true);
 
 // Fullscreen API
 window.addEventListener('fullscreenchange', evt => {
