@@ -10,7 +10,7 @@ MIT.
 
 ## Technical detail
 
-The add-on injects a content script to replace the properties exposed, and stops event from propagating when applicable.
+The add-on injects a content script to replace the properties exposed, and stops events from propagating when applicable.
 
 ### Page Visibility API
 
@@ -18,14 +18,8 @@ The add-on blocks `visibilitychange` event, and set `document.hidden` to be alwa
 
 ### Fullscreen API
 
-The add-on freezes the properties upon the first fullscreen request. The properties are:
-
-* `document.fullscreenEnabled`: `true`
-* `document.fullscreen`: `true`
-* `document.fullscreenElement`: the element that enters fullscreen
-
-The first `fullscreenchange` event is allowed to passed through as usual.
-Subsequent `fullscreenchange` events are blocked to keep the returned value of the API in the fullscreen state, even when the page exits the fullscreen.
+The add-on doesn't generally override the Fullscreen API because at the moment this is not required and the original implementation caused some broken UI after existing fullscreen.
+As a site-specific workaround, we do however block `fullscreenchange` events on Vimeo to prevent playback from stopping when exiting fullscreen.
 
 ## Sites
 
