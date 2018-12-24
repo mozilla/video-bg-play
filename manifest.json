@@ -14,7 +14,9 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*", "*://*.vimeo.com/*"],
+      "matches": ["*://*.youtube.com/*",
+                  "*://*.youtube-nocookie.com/*",
+                  "*://*.vimeo.com/*"],
       "js": ["video-bg-play-content.js"],
       "all_frames": true
     }
