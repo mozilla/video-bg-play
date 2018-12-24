@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Video Background Play Fix",
-  "version": "1.2.1",
+  "version": "1.3",
 
   "description": "Some sites may not work with Firefox video background play feature. This add-on provides a quick fix.",
 
