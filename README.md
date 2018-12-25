@@ -21,9 +21,13 @@ The add-on blocks `visibilitychange` event, and set `document.hidden` to be alwa
 The add-on doesn't generally override the Fullscreen API because at the moment this is not required and the original implementation caused some broken UI after existing fullscreen.
 As a site-specific workaround, we do however block `fullscreenchange` events on Vimeo to prevent playback from stopping when exiting fullscreen.
 
+### User activity tracking
+
+Some pages stop playback if they don't detect any user activity for a certain amount of time. To avoid this, the add-on ensures that the time of the last user activity is regularly updated.
+
 ## Sites
 
 As a demonstration, the content script currently injects itself to the following sites:
 
-* youtube.com
+* youtube.com and youtube-nocookie.com
 * vimeo.com
