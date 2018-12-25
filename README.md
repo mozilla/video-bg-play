@@ -6,7 +6,8 @@ This add-on is designed to block events and properties exposed by the APIs.
 
 ## License
 
-MIT.
+Add-on code: MIT.
+"[Glasses](https://thenounproject.com/term/glasses/1473422)" icon used in the logo by rahmatmasiv from [the Noun Project](https://thenounproject.com/)  under the [CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/).
 
 ## Technical detail
 

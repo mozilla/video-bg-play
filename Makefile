@@ -1,6 +1,7 @@
 FILES := manifest.json \
          video-bg-play-content.js \
          $(wildcard _locales/*/messages.json) \
+         icon.svg \
          README.md
 
 video-bg-play.zip: $(FILES) Makefile
