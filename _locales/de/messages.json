@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Videowiedergabe im Hintergrund",
+    "description": "Name der Erweiterung."
+  },
+
+  "extensionDescription": {
+    "message": "Spiele Videos im Hintergrund ab, auch wenn eine Seite dies nicht möchte.",
+    "description": "Beschreibung der Erweiterung."
+  }
+}

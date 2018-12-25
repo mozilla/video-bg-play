@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Video Background Play Fix",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Play back videos in background even if a page doesn't want you to.",
+    "description": "Description of the extension."
+  }
+}
