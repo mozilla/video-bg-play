@@ -19,15 +19,19 @@ if (IS_VIMEO) {
 
 // User activity tracking
 if (IS_YOUTUBE) {
-  waitForYoutubeLactInit(() => refreshLact(), 1000);
+  const refreshInterval = 5 * 60 * 1000; // every 5 minutes
+  waitForYoutubeLactInit(() => refreshLact(), refreshInterval);
 }
 
-function waitForYoutubeLactInit(aCallback, aDelay) {
+function waitForYoutubeLactInit(aCallback, aCallbackInterval, aDelay = 1000) {
   let pageWin = window.wrappedJSObject;
   if (pageWin.hasOwnProperty('_lact')) {
-    window.setInterval(() => refreshLact(), 5 * 60 * 1000);
+    window.setInterval(aCallback, aCallbackInterval);
   } else {
-    window.setTimeout(() => waitForYoutubeLactInit(aCallback, aDelay * 2), aDelay);
+    window.setTimeout(() => waitForYoutubeLactInit(aCallback,
+                                                   aCallbackInterval,
+                                                   aDelay * 2),
+                      aDelay);
   }
 }
 
