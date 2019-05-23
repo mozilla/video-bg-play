@@ -1,8 +1,8 @@
 'use strict';
 
-const IS_YOUTUBE = window.location.hostname.endsWith('youtube.com') ||
-                   window.location.hostname.endsWith('youtube-nocookie.com');
-const IS_VIMEO = window.location.hostname.endsWith('vimeo.com');
+const IS_YOUTUBE = window.location.hostname.search(/(?:^|.+\.)youtube.com/) > -1 ||
+                   window.location.hostname.search(/(?:^|.+\.)youtube-nocookie.com/) > -1;
+const IS_VIMEO = window.location.hostname.search(/(?:^|.+\.)vimeo.com/) > -1;
 
 // Page Visibility API
 Object.defineProperties(document.wrappedJSObject,
