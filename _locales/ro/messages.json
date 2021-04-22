@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Redare video în fundal",
+    "description": "Numele extensiei."
+  },
+
+  "extensionDescription": {
+    "message": "Redă videoclipuri în fundal, chiar dacă o pagină nu dorește acest lucru.",
+    "description": "Descrierea extensiei."
+  }
+}
