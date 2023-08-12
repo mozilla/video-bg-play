@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Correctiu per la lectura vidèo en rèireplan",
+    "description": "Nom de l’extension."
+  },
+
+  "extensionDescription": {
+    "message": "Legissètz de vidèos en rèireplan encara que la pagina vos vòlga pas daissar far.",
+    "description": "Descripcion de l’extension."
+  }
+}
