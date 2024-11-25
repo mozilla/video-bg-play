@@ -13,7 +13,7 @@
   "applications": {
     "gecko": {
       "id": "video-bg-play@timdream.org",
-      "strict_min_version": "42.0"
+      "strict_min_version": "58.0"
     }
   },
 
