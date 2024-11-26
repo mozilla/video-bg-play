@@ -21,7 +21,8 @@
     {
       "matches": ["*://*.youtube.com/*",
                   "*://*.youtube-nocookie.com/*",
-                  "*://*.vimeo.com/*"],
+                  "*://*.vimeo.com/*",
+                  "*://*.instagram.com/*"],
       "js": ["video-bg-play-content.js"],
       "all_frames": true
     }
